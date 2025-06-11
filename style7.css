@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #000;
+    color: rgb(255, 0, 0);
+    align-items: center;
+  }
+  
+  nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: rgb(153, 32, 32);
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .hero {
+    background: url('SU-57.jpg') no-repeat center center/cover;
+    height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .hero .highlight {
+    color: #ffc107;
+      }
+  
+  .hero .highlight-pink {
+    color: #f06292;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .hero button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #ff6f61;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero button:hover {
+    background-color: #c01a0e;
+  }
+  
